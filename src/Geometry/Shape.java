@@ -1,8 +1,8 @@
 package Geometry;
 
 public abstract class Shape {
-	double x;
-    double y;
+	public double x;
+    public double y;
 
     abstract double calculateArea();
     abstract double calculateCircumference();

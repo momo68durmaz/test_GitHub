@@ -10,13 +10,17 @@ public class Circle extends Shape{
         this.radius = radius;
     }
 	
-	@Override
+	/**
+	 * berechnet die Fläche
+	 */
 	double calculateArea() {
 		// TODO Auto-generated method stub
 		return Math.PI*(radius*2);
 	}
 
-	@Override
+	/**
+	 * berechnet den Umfang
+	 */
 	double calculateCircumference() {
 		// TODO Auto-generated method stub
 		return Math.PI*radius*2;

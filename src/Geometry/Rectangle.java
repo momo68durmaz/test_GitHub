@@ -10,12 +10,18 @@ public class Rectangle extends Shape {
         this.length = length;
         this.width = width;
     }
-	@Override
+	
+    /**
+     * berechnet die Fläche
+     */
 	double calculateArea() {
 		// TODO Auto-generated method stub
 		return this.length*this.width;
 	}
-	@Override
+	
+	/**
+	 * berechnet den Umfang
+	 */
 	double calculateCircumference() {
 		// TODO Auto-generated method stub
 		return (this.length + this.width)*2;

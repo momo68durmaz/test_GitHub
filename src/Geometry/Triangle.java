@@ -15,6 +15,11 @@ public class Triangle extends Shape{
 	        this.c = c;
 	        this.height = height;
 	    }
+	
+	/**
+	 * sucht die Basis für die Berechnung der Fläche
+	 * @return
+	 */
 	double base() {
 		double max = this.a;
 		if(this.b>this.c) {
@@ -30,13 +35,17 @@ public class Triangle extends Shape{
 		return max;
 	}
 	 
-	@Override
+	/**
+	 * berechnet die Fläche
+	 */
 	double calculateArea() {
 		// TODO Auto-generated method stub
 		return 0.5*base()*height;
 	}
 
-	@Override
+	/** 
+	 * berechnet den Umfang
+	 */
 	double calculateCircumference() {
 		// TODO Auto-generated method stub
 		return a+b+c;
