@@ -51,4 +51,11 @@ public class Triangle extends Shape{
 		return a+b+c;
 	}
 
+	@Override
+	public String toString() {
+		return "Triangle [a=" + a + ", b=" + b + ", c=" + c + ", height=" + height + "]";
+	}
+	
+	
+
 }

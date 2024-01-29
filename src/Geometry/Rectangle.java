@@ -26,5 +26,12 @@ public class Rectangle extends Shape {
 		// TODO Auto-generated method stub
 		return (this.length + this.width)*2;
 	}
+
+	@Override
+	public String toString() {
+		return "Rectangle [length=" + length + ", width=" + width + "]";
+	}
+	
+	
 }
 
