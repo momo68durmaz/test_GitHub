@@ -26,6 +26,11 @@ public class PhotoBroadcast extends Submissions{
 	public void setTitle(String title) {
 		this.title = title;
 	}
+
+	@Override
+	public String toString() {
+		return "PhotoBroadcast [" + super.toString() + "fileName=" + fileName + ", title=" + title + "]";
+	}
     
     
 

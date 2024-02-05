@@ -62,7 +62,16 @@ public abstract class Submissions {
 	
 	
 	
-	 public void addComment(Comment comments) {
+	
+	
+	 @Override
+	public String toString() {
+		return "Submissions [userName=" + userName + ", timeStamp=" + timeStamp + ", like=" + like + ", comments="
+				+ comments + "]";
+	}
+
+
+	public void addComment(Comment comments) {
 	        this.comments.add(comments);
 	    }
 	 
