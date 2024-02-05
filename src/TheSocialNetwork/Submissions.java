@@ -2,6 +2,7 @@ package TheSocialNetwork;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.concurrent.TimeUnit;
 
 public abstract class Submissions {
 	
@@ -61,11 +62,11 @@ public abstract class Submissions {
 	
 	
 	
-	 public void addComment(String comments) {
+	 public void addComment(Comment comments) {
 	        this.comments.add(comments);
 	    }
 	 
-	 public void removeComment(String comments) {
+	 public void removeComment(Comment comments) {
 	        this.comments.remove(comments);
 	    }
 
@@ -74,5 +75,36 @@ public abstract class Submissions {
 			 System.out.println(c);
 		 }
 	 }
+	 
+	 
+	 public static void getTimeAgo(long millis) {
+	        long currentTime = System.currentTimeMillis();
+	        long diff = currentTime - millis;
+
+	        long seconds = TimeUnit.MILLISECONDS.toSeconds(diff);
+	        long minutes = TimeUnit.MILLISECONDS.toMinutes(diff);
+	        long hours = TimeUnit.MILLISECONDS.toHours(diff);
+	        long days = TimeUnit.MILLISECONDS.toDays(diff);
+	        long months = TimeUnit.MILLISECONDS.toDays(diff) * 30;
+	        long year = TimeUnit.MILLISECONDS.toDays(diff) * 365;
+	        if (seconds < 60) {
+	        	System.out.println("vor " + seconds + " Sekunden");;
+	        } 
+	         else if (minutes < 3600) {
+	            System.out.println("vor " + minutes + " Minuten");;
+	        } 
+	         else if (hours < 86400) {
+	            System.out.println("vor " + hours + " Stunden");;
+	        } 
+	         else if(days < 604800) {
+	        	 System.out.println("vor " + days + " Tagen");
+	        }
+			 else if(months < 604800 * 30) {
+				 System.out.println("vor " + months + " Monaten");
+			}
+			 else if(year < 604800 * 365) {
+				System.out.println("vor " + year + " Jahren");
+		     }
+	   }
 	
 }
