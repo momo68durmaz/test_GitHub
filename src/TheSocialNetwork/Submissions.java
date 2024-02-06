@@ -71,14 +71,26 @@ public abstract class Submissions {
 	}
 
 
+	 /**
+	  * adds a comment
+	  * @param comments
+	  */
 	public void addComment(Comment comments) {
 	        this.comments.add(comments);
 	    }
-	 
+	
+	 /**
+	  * removes a comment
+	  * @param comments
+	  */
 	 public void removeComment(Comment comments) {
 	        this.comments.remove(comments);
 	    }
 
+	 
+	 /**
+	  * prints every comment
+	  */
 	 public void printAllComments() {
 		 for(Comment c : this.comments) {
 			 System.out.println(c);
@@ -86,6 +98,11 @@ public abstract class Submissions {
 	 }
 	 
 	 
+	 
+	 /**
+	  * calculates the time when the post was posted
+	  * @param millis
+	  */
 	 public static void getTimeAgo(long millis) {
 	        long currentTime = System.currentTimeMillis();
 	        long diff = currentTime - millis;
