@@ -39,8 +39,8 @@ public class FilterComment {
 		            lines.remove(i);
 		            i++;
 		        }
-		    }
+		    
 		
-	
+		  }
 }
 
