@@ -5,7 +5,7 @@ import java.util.List;
 
 public class FilterComment {
 	
-	ArrayList<String>logBuch = new ArrayList<String>();
+	ArrayList<String>logBuch;
 	
 	public static void main(String[] args) {
 		   List<String> logEntries = new ArrayList<>();
