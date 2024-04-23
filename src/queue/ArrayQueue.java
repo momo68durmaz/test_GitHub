@@ -14,7 +14,10 @@ public class ArrayQueue {
 		queue = new int[size];
 	}
 	
-	public static void queueEnqueue(int item) {
+	/*
+	 * setzt ein Wert in die Warteschlange ein
+	 */
+	public void queueEnqueue(int item) {
 		if(rear == capacity) {
 			System.out.println("Queue ist voll.");
 		}else {
@@ -23,13 +26,58 @@ public class ArrayQueue {
 		}
 	}
 	
-	public static int queueDequeue() {
+	/*
+	 * entfernt ein Wert aus der Warteschlange
+	 */
+	public int queueDequeue() {
+		int firstElement = 0;
 		if(rear == front) {
 			System.out.println("Queue ist leer");
 		}else {
+			firstElement = queue[front];
+			for(int i = 0; i <(rear-1); i++) {
+				queue[i] = queue[i+1];
+			}
+			if(rear < capacity) {
+				queue[rear] = 0;
+			}
+			rear --;
 			
-				int firstElement = queue[front];
+		}
+		return firstElement;
+	}
+	
+	/*
+	 * zeigt die Warteschlange an
+	 */
+	public void  queueDisplay() {
+		if(front == rear) {
+			System.out.println("Queue is empty!");
+		}else {
+			for(int i = front; i < rear; i++) {
+				System.out.println(i);
+			}
 		}
 	}
+	
+	/*
+	 * zeigt nur den ersten Wert an
+	 */
+	public int queueFront() {
+		// TODO erstes Element ohne Löschen zurückgeben
+		int firstElement = 0;
+		if(rear == front) {
+			System.out.println("Queue is empty!");
+		}else {
+			firstElement = queue[front];
+			
+		}return firstElement;
+		
+	}
+	
+	// HÜ: ArrayQueueTest - alle Methoden von ArrayQueue testen
+	//		JavaDoc - Kommentare
+	//		Kapitel 5 nochmal durcharbeiten
+	
 
 }
