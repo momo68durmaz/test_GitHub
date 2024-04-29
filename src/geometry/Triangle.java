@@ -1,4 +1,4 @@
-package Geometry;
+package geometry;
 
 public class Triangle extends Shape{
 

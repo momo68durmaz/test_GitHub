@@ -1,4 +1,4 @@
-package Geometry;
+package geometry;
 
 public abstract class Shape {
 	public double x;

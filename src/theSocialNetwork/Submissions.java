@@ -1,4 +1,4 @@
-package TheSocialNetwork;
+package theSocialNetwork;
 
 import java.time.LocalDate;
 import java.util.ArrayList;

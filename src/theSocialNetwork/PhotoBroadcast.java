@@ -1,4 +1,4 @@
-package TheSocialNetwork;
+package theSocialNetwork;
 
 
 public class PhotoBroadcast extends Submissions{
