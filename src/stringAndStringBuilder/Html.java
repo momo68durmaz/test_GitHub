@@ -27,11 +27,17 @@ public class Html {
     // Testmethode
     public static void main(String[] args) {
         // Einige Beispiele zur Überprüfung der Implementierung
-        System.out.println(htmlElement("p", "Dies ist ein Paragraph."));
-        System.out.println(htmlElement("", "Dieser Text hat keine Tags."));
-        System.out.println(htmlElement("div", null));
-        System.out.println(strong("Wichtig"));
-        System.out.println(emphasized("Betont"));
+        System.out.println(htmlElement("strong","strong is bold "));
+        System.out.println(strong(emphasized("strong + emphasized")));
+        System.out.println(htmlElement("span", null));
+        System.out.println(htmlElement("","no"));
+        System.out.println(htmlElement(null,"not strong"));
+        System.out.println(htmlElement(null, null));
+
+
+
+
+
     }
 
 }
