@@ -8,6 +8,8 @@ public class Test {
 		Triangle t1 = new Triangle(1,2,3,5,8,5);
 		
 		System.out.println(r1);
+		System.out.println(c1);
+		System.out.println(t1);
 
 	}
 
